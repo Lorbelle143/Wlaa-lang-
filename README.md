@@ -1,35 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorbelle Ganzan Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Header Section -->
-    <header class="header text-center text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Lorbelle Ganzan</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="profile-img mt-3">
-            <img src="images/profile.jpg" alt="Lorbelle Ganzan" class="rounded-circle shadow-lg">
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    padding: 80px 20px 50px;
+    position: relative;
+}
+
+.header .profile-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+}
+
+/* Skills Section */
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+}
         </div>
         <h1 class="mt-3">Hello, I'm Lorbelle Ganzan</h1>
         <p>Student / Aspiring Web Developer</p>
